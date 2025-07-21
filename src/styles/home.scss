@@ -1,0 +1,11 @@
+@use 'header';
+@use 'mix';
+@use 'reset';
+@use 'section';
+@use 'typography';
+@use 'variables';
+
+body {
+    background-color: variables.$bgColor;
+    font-family: typography.$fontP;
+}

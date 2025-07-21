@@ -1,0 +1,27 @@
+@mixin title($font-size: 12px) {
+    font-size: $font-size;
+}
+
+@mixin text($text-size: 12px) {
+    font-size: 10px;
+}
+
+.title--big {
+    @include title();
+}
+.title {
+    @include title();
+}
+.title--small {
+    @include title();
+}
+
+.text--big {
+    @include text();
+}
+.text {
+    @include text();
+}
+.text--small {
+    @include text();
+}
