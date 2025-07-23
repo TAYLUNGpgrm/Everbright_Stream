@@ -1,11 +1,40 @@
 @use '/src/styles/Styles&Fonts/typography';
 @use '/src/styles/Styles&Fonts/variables';
 @use 'header';
-@use 'mix';
-@use 'reset';
 @use 'hero';
+@use 'mix';
+@use 'plans';
+@use 'reset';
 @use 'shows';
 
 body {
     background-color: variables.$colorB;
+}
+
+.button {
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variables.$colorB;
+    background: radial-gradient(variables.$blueBaby 0%, transparent 100%);
+    transform: transition, transform, color;
+    transition: .4s ease;
+    border-radius: 8px;
+    font-weight: 900;
+    margin-top: 2vw;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(0.99);
+        transition: .4s ease;
+        opacity: 80%;
+        color: white;
+    }
+}
+
+.button__child {
+    background: radial-gradient(variables.$purpleBaby 0%, transparent 100%);
+    border: none;
 }

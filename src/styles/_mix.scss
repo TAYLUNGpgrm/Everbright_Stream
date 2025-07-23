@@ -1,27 +1,29 @@
 @use '/src/styles/Styles&Fonts/variables';
 @use '/src/styles/Styles&Fonts/typography';
 
-@mixin title($font-size-rem) {
-    font-size: $font-size-rem;
-    color: variables.$colorS;
-    line-height: $font-size-rem;
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$colorP;
 }
 
-@mixin text($text-size-rem) {
-    font-size: $text-size-rem;
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
     color: variables.$colorS;
+    line-height: $fontSize;
 }
 
 .title--big {
-    @include title(2.5rem); // 40px / 16px = 2.5rem
+    @include title(44px); // 40px / 16px = 2.5rem
 }
 
 .title {
-    @include title(1.5rem); // 24px / 16px = 1.5rem
+    @include title; // 24px / 16px = 1.5rem
 }
 
 .title--small {
-    @include title(1.115rem); // 18px / 16px = 1.125rem
+    @include title(28px); // 18px / 16px = 1.125rem
 }
 
 .link-text {
@@ -31,13 +33,13 @@
 }
 
 .text--big {
-    @include text(1rem); // 16px / 16px = 1rem (ou pode ser 1.125rem se 18px for o grande)
+    @include text(18px); // 16px / 16px = 1rem (ou pode ser 1.125rem se 18px for o grande)
 }
 
 .text {
-    @include text(0.875rem); // 14px / 16px = 0.875rem
+    @include text; // 14px / 16px = 0.875rem
 }
 
 .text--small {
-    @include text(0.75rem); // 12px / 16px = 0.75rem
+    @include text(12px); // 12px / 16px = 0.75rem
 }

@@ -1,0 +1,47 @@
+@use '/src/styles/Styles&Fonts/typography';
+@use '/src/styles/Styles&Fonts/variables';
+
+.shows {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &--is--active {
+            display: grid;
+        }
+
+        &__item {
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            margin: 0 1vw;
+            color: variables.$colorS;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 4px;
+            background: none;
+            text-transform: uppercase;
+            font-family: typography.$fontTik;
+            border-bottom: 4px solid transparent;
+            cursor: pointer;
+
+            &--is--active {
+                border-color: variables.$colorS;
+            }
+        }
+    }
+}

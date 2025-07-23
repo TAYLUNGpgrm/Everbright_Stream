@@ -2,15 +2,15 @@
 @use '/src/styles/Styles&Fonts/variables';
 
 .hero {
+    padding: 2vw;
     text-align: center;
-    background-image: url(../images/hero_desktop.jpeg);
-    background-size: cover;
+    min-height: 100vh;
+    background-image: url(../images/Avangers.png);
     background-repeat: no-repeat;
-    padding: 2vw 5.6vw;
-    min-height: 80vh;
     background-size: cover;
-
+    
     &__content {
+        margin-top: 50px;
         max-width: 640px;
 
         &__branding {
@@ -70,7 +70,7 @@
                 }
 
                 &:last-child {
-                    background: radial-gradient(variables.$blueDark 0%, variables.$colorB 70%, transparent 100%);
+                    background: radial-gradient(variables.$purpleNeon 0%, variables.$colorB 70%, transparent 100%);
                     border-radius: 16px;
                 }
             }
@@ -78,7 +78,7 @@
             :hover {
                 transform: scale(0.99);
                 transition: .4s ease;
-                background: radial-gradient(variables.$blueBaby 0%, variables.$colorB 70%, transparent 100%);
+                background: radial-gradient(variables.$purpleBaby 0%, variables.$colorB 70%, transparent 100%);
             }
         }
     }

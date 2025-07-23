@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Every Bright_Stream</title>
+    <title>Disney+</title>
     <link rel="stylesheet" href="./styles/home.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,6 @@
         rel="stylesheet">
 
 </head>
-
 <body>
     <section class="hero">
         <div class="hero__content">
@@ -25,7 +24,7 @@
                 <img src="./images/disneyplus.svg" alt="Disney+">
             </div>
             <h3 class="title--small">
-                As melhores histórias em um só lugar!
+                Bem-Vindo ao mundo Disney+! Onde as fantasias e histórias se conectam de uma forma totalmente mágica!
             </h3>
             <p>
                 <a class="link-text" href="">Assinar o Diney+</a>
@@ -37,12 +36,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./images/logos/disney_star_plus.png" alt="Disney logo svg">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./images/logos/disney_star_plus.png" alt="Disney logo svg">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
             </ul>
@@ -51,6 +50,107 @@
             </p>
         </div>
     </section>
+
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">Em
+                breve</button>
+            <button data-tab-button="filmes" class="shows__tabs__button">Filmes</button>
+            <button data-tab-button="series" class="shows__tabs__button">Séries</button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">
+            <li class="shows__list__item">
+                <img src="./images/em_breve/lobisomem.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="filmes" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./images/em_breve/sem_limites.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="series" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+        </ul>
+    </section>
+
+    <section class="plans">
+        <h2 class="title--big">Escolha o seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./images/logos/disneyplus_underline.png" alt="Underline">
+                <strong class="title--small">R$ 27,90/mês</strong>
+                <p class="text--big">
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis
+                </p>
+                <button class="button">Assine Agora!</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./images/logos/disney_star_plus_sm.png" alt="Underline">
+                <strong class="title--small">R$ 45,90/mês</strong>
+                <p class="text--big">
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis
+                </p>
+                <button class="button button__child">Assine Agora!</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./images/logos/disney_star_plus_starzplay_underline.png" alt="Underline">
+                <strong class="title--small">R$ 55,90/mês</strong>
+                <p class="text--big">
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis
+                </p>
+                <button class="button">Assine Agora!</button>
+            </li>
+        </ul>
+        <p class="text--small">*O preço pode variar, caso a assinatura seja feita atravéz de outras plataformas</p>
+    </section>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
