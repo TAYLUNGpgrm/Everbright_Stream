@@ -1,5 +1,8 @@
 @use '/src/styles/Styles&Fonts/typography';
 @use '/src/styles/Styles&Fonts/variables';
+@use 'available';
+@use 'faq';
+@use 'footer';
 @use 'header';
 @use 'hero';
 @use 'mix';
@@ -13,7 +16,10 @@ body {
 
 .button {
     letter-spacing: 2px;
-    display: block;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-size: 18px;
@@ -23,7 +29,8 @@ body {
     transition: .4s ease;
     border-radius: 8px;
     font-weight: 900;
-    margin-top: 2vw;
+    padding: 8px 14px;
+    border: 1px solid variables.$blueBaby;
     cursor: pointer;
 
     &:hover {
@@ -32,9 +39,88 @@ body {
         opacity: 80%;
         color: white;
     }
+
+    &--secundary {
+        background: radial-gradient(rgb(variables.$blueCian, .4) 0%, transparent 100%);
+        color: variables.$colorS;
+        border-color: variables.$blueCian;
+    }
+
+    &--dark {
+        border: 1px solid variables.$blueBaby;
+        border-color: variables.$colorP;
+        display: block;
+        align-items: center;
+        background-color: variables.$blackB;
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        color: variables.$colorP;
+        transform: transition, transform, color;
+        transition: .4s ease;
+        border-radius: 8px;
+        font-weight: 900;
+        padding: 8px 14px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: variables.$colorS;
+            color: variables.$colorB;
+        }
+    }
 }
 
 .button__child {
     background: radial-gradient(variables.$purpleBaby 0%, transparent 100%);
     border: none;
+}
+
+// Construindo regras duplas
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text_container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__text_container {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
 }
