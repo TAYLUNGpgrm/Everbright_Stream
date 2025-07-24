@@ -1,3 +1,6 @@
+@use '/src/styles/Styles&Fonts/typography';
+@use '/src/styles/Styles&Fonts/variables';
+
 .faq {
     padding: 5.6vw;
 
@@ -8,11 +11,14 @@
 
     &__questions {
         &__item {
-            background-color: #13151d;
+            border-radius: 50vh;
+            background: radial-gradient(variables.$colorS 0%, variables.$blackB, transparent 100%);
             margin-bottom: 16px;
 
             &__question {
-                color: #fff;
+                text-align: center;
+                color: variables.$blackB;
+                font-weight: 900;
                 font-size: 20px;
                 padding: 24px;
                 display: block;
@@ -34,6 +40,7 @@
             &__answer {
                 height: 0;
                 overflow: hidden;
+                text-align: center;
             }
 
             &--is--open {
